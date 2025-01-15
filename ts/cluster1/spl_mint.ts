@@ -34,7 +34,7 @@ const mint = new PublicKey("BsH1r5u9iMFdmAijeKby3nMpHF7pytNYykPNKDpY9pLs");
       keypair.publicKey,
       token_decimals
     );
-    console.log(`Your mint txid: ${mintTx}`);
+    console.log(`Your mint txid: ${mintTx}`); // 77b8zwCyUCgcph31c1xinqn49Kwouei1RFckiMBrtwPs
   } catch (error) {
     console.log(`Oops, something went wrong: ${error}`);
   }
