@@ -9,7 +9,7 @@ const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
 const commitment: Commitment = "confirmed";
 const connection = new Connection("https://api.devnet.solana.com", commitment);
 
-const token_decimals = 1_000_000n;
+const token_amount = 1_000_000_000n * 1_000_000n;
 
 // Mint address
 const mint = new PublicKey("BsH1r5u9iMFdmAijeKby3nMpHF7pytNYykPNKDpY9pLs");
@@ -32,7 +32,7 @@ const mint = new PublicKey("BsH1r5u9iMFdmAijeKby3nMpHF7pytNYykPNKDpY9pLs");
       mint,
       ata.address,
       keypair.publicKey,
-      token_decimals
+      token_amount
     );
     console.log(`Your mint txid: ${mintTx}`); // 77b8zwCyUCgcph31c1xinqn49Kwouei1RFckiMBrtwPs
   } catch (error) {
