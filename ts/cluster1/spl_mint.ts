@@ -23,7 +23,7 @@ const mint = new PublicKey("BsH1r5u9iMFdmAijeKby3nMpHF7pytNYykPNKDpY9pLs");
       mint,
       keypair.publicKey
     );
-    console.log(`Your ata is: ${ata.address.toBase58()}`);
+    console.log(`Your ata is: ${ata.address.toBase58()}`); // 77b8zwCyUCgcph31c1xinqn49Kwouei1RFckiMBrtwPs
 
     // Mint to ATA
     const mintTx = await mintTo(
@@ -34,7 +34,7 @@ const mint = new PublicKey("BsH1r5u9iMFdmAijeKby3nMpHF7pytNYykPNKDpY9pLs");
       keypair.publicKey,
       token_amount
     );
-    console.log(`Your mint txid: ${mintTx}`); // 77b8zwCyUCgcph31c1xinqn49Kwouei1RFckiMBrtwPs
+    console.log(`Your mint txid: ${mintTx}`);
   } catch (error) {
     console.log(`Oops, something went wrong: ${error}`);
   }
