@@ -13,7 +13,7 @@ const connection = new Connection("https://api.devnet.solana.com", commitment);
 const mint = new PublicKey("BsH1r5u9iMFdmAijeKby3nMpHF7pytNYykPNKDpY9pLs");
 
 // Recipient address
-const toWallet = new PublicKey("8XWKZdb8eh2rANkh39796gboLqXb3hwHQcrMgAGSS6jb");
+const toWallet = new PublicKey("4gTWiPwC7AHdsu6BtySRd9KvEZVJmhQJRkB9rNH2P1Kj");
 
 (async () => {
   try {
@@ -38,7 +38,7 @@ const toWallet = new PublicKey("8XWKZdb8eh2rANkh39796gboLqXb3hwHQcrMgAGSS6jb");
       sender_ata.address,
       receiver_ata2.address,
       keypair,
-      1000002 * 1_000_000
+      1000000 * 1_000_000
     );
     console.log(`Transaction signature: ${tx}`);
   } catch (e) {
