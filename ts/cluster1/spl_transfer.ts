@@ -38,7 +38,7 @@ const toWallet = new PublicKey("4gTWiPwC7AHdsu6BtySRd9KvEZVJmhQJRkB9rNH2P1Kj");
       sender_ata.address,
       receiver_ata2.address,
       keypair,
-      1000000 * 1_000_000
+      100000 * 1_000_000
     );
     console.log(`Transaction signature: ${tx}`);
   } catch (e) {
